@@ -1,0 +1,591 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		860E54A42C70E81000968AE8 /* PipelineStateInitializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 860E54A32C70E81000968AE8 /* PipelineStateInitializer.swift */; };
+		860E54AC2C71327700968AE8 /* Joltarm64.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 860E54AB2C71327700968AE8 /* Joltarm64.a */; };
+		860E692D2C6DFBCC00ACC06D /* DebugModel.mtl in Resources */ = {isa = PBXBuildFile; fileRef = 860E692C2C6DFBCC00ACC06D /* DebugModel.mtl */; };
+		860E692F2C6DFBF800ACC06D /* DebugTexture.png in Resources */ = {isa = PBXBuildFile; fileRef = 860E692E2C6DFBF800ACC06D /* DebugTexture.png */; };
+		860E69312C6E157E00ACC06D /* MeshMaterial.swift in Sources */ = {isa = PBXBuildFile; fileRef = 860E69302C6E157E00ACC06D /* MeshMaterial.swift */; };
+		860E69332C6E407900ACC06D /* GraphicResourceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 860E69322C6E407900ACC06D /* GraphicResourceManager.swift */; };
+		8610382C2C79F46A00A9E503 /* Skybox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8610382B2C79F46A00A9E503 /* Skybox.swift */; };
+		8610382E2C7A41F000A9E503 /* noise.png in Resources */ = {isa = PBXBuildFile; fileRef = 8610382D2C7A41F000A9E503 /* noise.png */; };
+		86195F922C6A9EFB00341F29 /* DebugModel.obj in Resources */ = {isa = PBXBuildFile; fileRef = 86195F912C6A9EFB00341F29 /* DebugModel.obj */; };
+		86249C922C6FA91E00624DC7 /* MeshTexture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86249C912C6FA91E00624DC7 /* MeshTexture.swift */; };
+		86249C982C6FF33A00624DC7 /* BridgingTestPlayground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86249C972C6FF33A00624DC7 /* BridgingTestPlayground.swift */; };
+		86276E932C6BEA930065ADB6 /* ModelImporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86276E922C6BEA930065ADB6 /* ModelImporter.swift */; };
+		86276E952C6BEF640065ADB6 /* GameThread.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86276E942C6BEF640065ADB6 /* GameThread.swift */; };
+		86390A112C77A00F00272308 /* Renderable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 86390A0F2C77A00F00272308 /* Renderable.cpp */; };
+		86390A132C77AE1C00272308 /* MetalBufferManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86390A122C77AE1C00272308 /* MetalBufferManager.swift */; };
+		8652B9982C70BEC1002B12CC /* VoxelShader.metal in Sources */ = {isa = PBXBuildFile; fileRef = 8652B9972C70BEC1002B12CC /* VoxelShader.metal */; };
+		8652E5F02C7A71A000DE0423 /* sky.png in Resources */ = {isa = PBXBuildFile; fileRef = 8652E5EF2C7A71A000DE0423 /* sky.png */; };
+		867677292C7A4CEA00A8A2A6 /* AudioController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 867677282C7A4CEA00A8A2A6 /* AudioController.swift */; };
+		8676772B2C7A52D700A8A2A6 /* DebugBGM.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 8676772A2C7A4EC900A8A2A6 /* DebugBGM.m4a */; };
+		8681A6F52C62A60E006BCAB6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8681A6F42C62A60E006BCAB6 /* AppDelegate.swift */; };
+		8681A6F72C62A60E006BCAB6 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8681A6F62C62A60E006BCAB6 /* GameViewController.swift */; };
+		8681A6FA2C62A60E006BCAB6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8681A6F82C62A60E006BCAB6 /* Main.storyboard */; };
+		8681A6FC2C62A60E006BCAB6 /* Shaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = 8681A6E92C62A60C006BCAB6 /* Shaders.metal */; };
+		8681A6FD2C62A60E006BCAB6 /* Renderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8681A6EA2C62A60C006BCAB6 /* Renderer.swift */; };
+		8681A6FE2C62A60E006BCAB6 /* ShaderTypes.h in Resources */ = {isa = PBXBuildFile; fileRef = 8681A6EB2C62A60C006BCAB6 /* ShaderTypes.h */; };
+		8681A6FF2C62A60E006BCAB6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8681A6EC2C62A60E006BCAB6 /* Assets.xcassets */; };
+		8681A7082C62A6B7006BCAB6 /* CPPTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8681A7072C62A6B7006BCAB6 /* CPPTest.cpp */; };
+		868283F42C78FB6A004C9150 /* TextureImporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868283F32C78FB6A004C9150 /* TextureImporter.swift */; };
+		868CEE762C638E08006FCAEC /* TransformMatrix.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868CEE752C638E08006FCAEC /* TransformMatrix.swift */; };
+		86C371F72C6CE900003D2F4D /* Mesh.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C371F62C6CE900003D2F4D /* Mesh.swift */; };
+		86C371F92C6D35C1003D2F4D /* SwiftBridgingFunctions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 86C371F82C6D35C1003D2F4D /* SwiftBridgingFunctions.cpp */; };
+		86EF79892C6B83AF00754B26 /* SwiftUtilities.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 86EF79872C6B83AF00754B26 /* SwiftUtilities.cpp */; };
+		86EF94072C6A2C9500D71A0C /* Scene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 86EF94052C6A2C9500D71A0C /* Scene.cpp */; };
+		86EF940A2C6A2EFF00D71A0C /* MatrixTransformCPP.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 86EF94082C6A2EFF00D71A0C /* MatrixTransformCPP.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		86040FA72C8B784100411E1C /* MarchingCubesTable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MarchingCubesTable.h; sourceTree = "<group>"; };
+		860E54A32C70E81000968AE8 /* PipelineStateInitializer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PipelineStateInitializer.swift; sourceTree = "<group>"; };
+		860E54AB2C71327700968AE8 /* Joltarm64.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = Joltarm64.a; path = "../../../libs/JoltPhysics-5.0.0/Build/XCode_MacOS/build/Jolt.build/Debug/Objects-normal/arm64/Binary/Joltarm64.a"; sourceTree = "<group>"; };
+		860E692C2C6DFBCC00ACC06D /* DebugModel.mtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = DebugModel.mtl; sourceTree = "<group>"; };
+		860E692E2C6DFBF800ACC06D /* DebugTexture.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DebugTexture.png; sourceTree = "<group>"; };
+		860E69302C6E157E00ACC06D /* MeshMaterial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeshMaterial.swift; sourceTree = "<group>"; };
+		860E69322C6E407900ACC06D /* GraphicResourceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphicResourceManager.swift; sourceTree = "<group>"; };
+		8610382B2C79F46A00A9E503 /* Skybox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Skybox.swift; sourceTree = "<group>"; };
+		8610382D2C7A41F000A9E503 /* noise.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = noise.png; sourceTree = "<group>"; };
+		86195F912C6A9EFB00341F29 /* DebugModel.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = DebugModel.obj; sourceTree = "<group>"; };
+		86249C912C6FA91E00624DC7 /* MeshTexture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeshTexture.swift; sourceTree = "<group>"; };
+		86249C932C6FB29500624DC7 /* SwiftBridgingFunctions.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = SwiftBridgingFunctions.hpp; sourceTree = "<group>"; };
+		86249C942C6FB2C800624DC7 /* CPPTest.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = CPPTest.hpp; sourceTree = "<group>"; };
+		86249C972C6FF33A00624DC7 /* BridgingTestPlayground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BridgingTestPlayground.swift; sourceTree = "<group>"; };
+		86276E922C6BEA930065ADB6 /* ModelImporter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelImporter.swift; sourceTree = "<group>"; };
+		86276E942C6BEF640065ADB6 /* GameThread.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameThread.swift; sourceTree = "<group>"; };
+		86390A0F2C77A00F00272308 /* Renderable.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Renderable.cpp; sourceTree = "<group>"; };
+		86390A102C77A00F00272308 /* Renderable.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Renderable.hpp; sourceTree = "<group>"; };
+		86390A122C77AE1C00272308 /* MetalBufferManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetalBufferManager.swift; sourceTree = "<group>"; };
+		86395B852C77DF8D0004CF9F /* BufferIndices.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BufferIndices.h; sourceTree = "<group>"; };
+		8652B9972C70BEC1002B12CC /* VoxelShader.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = VoxelShader.metal; sourceTree = "<group>"; };
+		8652B9992C70BF2D002B12CC /* MetalConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MetalConstants.h; sourceTree = "<group>"; };
+		8652E5EF2C7A71A000DE0423 /* sky.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sky.png; sourceTree = "<group>"; };
+		867677282C7A4CEA00A8A2A6 /* AudioController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioController.swift; sourceTree = "<group>"; };
+		8676772A2C7A4EC900A8A2A6 /* DebugBGM.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = DebugBGM.m4a; sourceTree = "<group>"; };
+		8681A6E92C62A60C006BCAB6 /* Shaders.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Shaders.metal; sourceTree = "<group>"; };
+		8681A6EA2C62A60C006BCAB6 /* Renderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Renderer.swift; sourceTree = "<group>"; };
+		8681A6EB2C62A60C006BCAB6 /* ShaderTypes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShaderTypes.h; sourceTree = "<group>"; };
+		8681A6EC2C62A60E006BCAB6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8681A6F12C62A60E006BCAB6 /* Yami✨no✨Game.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Yami✨no✨Game.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8681A6F42C62A60E006BCAB6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8681A6F62C62A60E006BCAB6 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		8681A6F92C62A60E006BCAB6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8681A6FB2C62A60E006BCAB6 /* Yami_no_Game_macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Yami_no_Game_macOS.entitlements; sourceTree = "<group>"; };
+		8681A7072C62A6B7006BCAB6 /* CPPTest.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = CPPTest.cpp; sourceTree = "<group>"; };
+		868283F32C78FB6A004C9150 /* TextureImporter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextureImporter.swift; sourceTree = "<group>"; };
+		868CEE752C638E08006FCAEC /* TransformMatrix.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransformMatrix.swift; sourceTree = "<group>"; };
+		8699EA082C6B63FC00E05A00 /* BridgingHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BridgingHeader.h; sourceTree = "<group>"; };
+		86C371F62C6CE900003D2F4D /* Mesh.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mesh.swift; sourceTree = "<group>"; };
+		86C371F82C6D35C1003D2F4D /* SwiftBridgingFunctions.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SwiftBridgingFunctions.cpp; sourceTree = "<group>"; };
+		86EF79872C6B83AF00754B26 /* SwiftUtilities.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SwiftUtilities.cpp; sourceTree = "<group>"; };
+		86EF79882C6B83AF00754B26 /* SwiftUtilities.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = SwiftUtilities.hpp; sourceTree = "<group>"; };
+		86EF94052C6A2C9500D71A0C /* Scene.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Scene.cpp; sourceTree = "<group>"; };
+		86EF94062C6A2C9500D71A0C /* Scene.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Scene.hpp; sourceTree = "<group>"; };
+		86EF94082C6A2EFF00D71A0C /* MatrixTransformCPP.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = MatrixTransformCPP.cpp; sourceTree = "<group>"; };
+		86EF94092C6A2EFF00D71A0C /* MatrixTransformCPP.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = MatrixTransformCPP.hpp; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8681A6EE2C62A60E006BCAB6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				860E54AC2C71327700968AE8 /* Joltarm64.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8610382A2C79F42400A9E503 /* Skybox */ = {
+			isa = PBXGroup;
+			children = (
+				8610382B2C79F46A00A9E503 /* Skybox.swift */,
+			);
+			path = Skybox;
+			sourceTree = "<group>";
+		};
+		86249C952C6FB33C00624DC7 /* Debug */ = {
+			isa = PBXGroup;
+			children = (
+				8681A7072C62A6B7006BCAB6 /* CPPTest.cpp */,
+				86249C942C6FB2C800624DC7 /* CPPTest.hpp */,
+				86249C972C6FF33A00624DC7 /* BridgingTestPlayground.swift */,
+			);
+			path = Debug;
+			sourceTree = "<group>";
+		};
+		86249C962C6FB46400624DC7 /* Shaders */ = {
+			isa = PBXGroup;
+			children = (
+				86395B852C77DF8D0004CF9F /* BufferIndices.h */,
+				8681A6EB2C62A60C006BCAB6 /* ShaderTypes.h */,
+				8652B9992C70BF2D002B12CC /* MetalConstants.h */,
+				8681A6E92C62A60C006BCAB6 /* Shaders.metal */,
+				8652B9972C70BEC1002B12CC /* VoxelShader.metal */,
+			);
+			path = Shaders;
+			sourceTree = "<group>";
+		};
+		866B917D2C6F545000D19307 /* Engine */ = {
+			isa = PBXGroup;
+			children = (
+				86C371F82C6D35C1003D2F4D /* SwiftBridgingFunctions.cpp */,
+				86249C932C6FB29500624DC7 /* SwiftBridgingFunctions.hpp */,
+				867677282C7A4CEA00A8A2A6 /* AudioController.swift */,
+				86040FA72C8B784100411E1C /* MarchingCubesTable.h */,
+			);
+			path = Engine;
+			sourceTree = "<group>";
+		};
+		8681A6E32C62A60C006BCAB6 = {
+			isa = PBXGroup;
+			children = (
+				8681A73D2C62C0C3006BCAB6 /* lib */,
+				8681A6E82C62A60C006BCAB6 /* Yami✨no✨Game Shared */,
+				8681A6F32C62A60E006BCAB6 /* Yami✨no✨Game macOS */,
+				8681A6F22C62A60E006BCAB6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8681A6E82C62A60C006BCAB6 /* Yami✨no✨Game Shared */ = {
+			isa = PBXGroup;
+			children = (
+				866B917D2C6F545000D19307 /* Engine */,
+				86EF798A2C6B87CC00754B26 /* Resources */,
+				86EF94042C6A2C7700D71A0C /* Scene */,
+				868CEE772C640D20006FCAEC /* Rendering */,
+				86249C962C6FB46400624DC7 /* Shaders */,
+				8681A6EA2C62A60C006BCAB6 /* Renderer.swift */,
+				86276E942C6BEF640065ADB6 /* GameThread.swift */,
+				8699EA082C6B63FC00E05A00 /* BridgingHeader.h */,
+				8681A6EC2C62A60E006BCAB6 /* Assets.xcassets */,
+			);
+			path = "Yami✨no✨Game Shared";
+			sourceTree = "<group>";
+		};
+		8681A6F22C62A60E006BCAB6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8681A6F12C62A60E006BCAB6 /* Yami✨no✨Game.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8681A6F32C62A60E006BCAB6 /* Yami✨no✨Game macOS */ = {
+			isa = PBXGroup;
+			children = (
+				8681A6F42C62A60E006BCAB6 /* AppDelegate.swift */,
+				8681A6F62C62A60E006BCAB6 /* GameViewController.swift */,
+				8681A6F82C62A60E006BCAB6 /* Main.storyboard */,
+				8681A6FB2C62A60E006BCAB6 /* Yami_no_Game_macOS.entitlements */,
+			);
+			path = "Yami✨no✨Game macOS";
+			sourceTree = "<group>";
+		};
+		8681A73D2C62C0C3006BCAB6 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				860E54AB2C71327700968AE8 /* Joltarm64.a */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		868CEE772C640D20006FCAEC /* Rendering */ = {
+			isa = PBXGroup;
+			children = (
+				86249C952C6FB33C00624DC7 /* Debug */,
+				86EF79862C6B837F00754B26 /* Graphics */,
+				8610382A2C79F42400A9E503 /* Skybox */,
+				868CEE752C638E08006FCAEC /* TransformMatrix.swift */,
+				860E69322C6E407900ACC06D /* GraphicResourceManager.swift */,
+				860E54A32C70E81000968AE8 /* PipelineStateInitializer.swift */,
+				86390A122C77AE1C00272308 /* MetalBufferManager.swift */,
+				86EF94082C6A2EFF00D71A0C /* MatrixTransformCPP.cpp */,
+				86EF94092C6A2EFF00D71A0C /* MatrixTransformCPP.hpp */,
+				86EF79872C6B83AF00754B26 /* SwiftUtilities.cpp */,
+				86EF79882C6B83AF00754B26 /* SwiftUtilities.hpp */,
+			);
+			path = Rendering;
+			sourceTree = "<group>";
+		};
+		86EF79862C6B837F00754B26 /* Graphics */ = {
+			isa = PBXGroup;
+			children = (
+				868283F32C78FB6A004C9150 /* TextureImporter.swift */,
+				86276E922C6BEA930065ADB6 /* ModelImporter.swift */,
+				86C371F62C6CE900003D2F4D /* Mesh.swift */,
+				860E69302C6E157E00ACC06D /* MeshMaterial.swift */,
+				86249C912C6FA91E00624DC7 /* MeshTexture.swift */,
+			);
+			path = Graphics;
+			sourceTree = "<group>";
+		};
+		86EF798A2C6B87CC00754B26 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8676772A2C7A4EC900A8A2A6 /* DebugBGM.m4a */,
+				860E692E2C6DFBF800ACC06D /* DebugTexture.png */,
+				860E692C2C6DFBCC00ACC06D /* DebugModel.mtl */,
+				86195F912C6A9EFB00341F29 /* DebugModel.obj */,
+				8610382D2C7A41F000A9E503 /* noise.png */,
+				8652E5EF2C7A71A000DE0423 /* sky.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		86EF94042C6A2C7700D71A0C /* Scene */ = {
+			isa = PBXGroup;
+			children = (
+				86EF94052C6A2C9500D71A0C /* Scene.cpp */,
+				86EF94062C6A2C9500D71A0C /* Scene.hpp */,
+				86390A0F2C77A00F00272308 /* Renderable.cpp */,
+				86390A102C77A00F00272308 /* Renderable.hpp */,
+			);
+			path = Scene;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8681A6F02C62A60E006BCAB6 /* Yami✨no✨Game macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8681A7022C62A60E006BCAB6 /* Build configuration list for PBXNativeTarget "Yami✨no✨Game macOS" */;
+			buildPhases = (
+				8681A6ED2C62A60E006BCAB6 /* Sources */,
+				8681A6EE2C62A60E006BCAB6 /* Frameworks */,
+				8681A6EF2C62A60E006BCAB6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Yami✨no✨Game macOS";
+			productName = "Yami✨no✨Game macOS";
+			productReference = 8681A6F12C62A60E006BCAB6 /* Yami✨no✨Game.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8681A6E42C62A60C006BCAB6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					8681A6F02C62A60E006BCAB6 = {
+						CreatedOnToolsVersion = 15.0.1;
+					};
+				};
+			};
+			buildConfigurationList = 8681A6E72C62A60C006BCAB6 /* Build configuration list for PBXProject "Yami✨no✨Game" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8681A6E32C62A60C006BCAB6;
+			productRefGroup = 8681A6F22C62A60E006BCAB6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8681A6F02C62A60E006BCAB6 /* Yami✨no✨Game macOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8681A6EF2C62A60E006BCAB6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8681A6FA2C62A60E006BCAB6 /* Main.storyboard in Resources */,
+				8681A6FF2C62A60E006BCAB6 /* Assets.xcassets in Resources */,
+				86195F922C6A9EFB00341F29 /* DebugModel.obj in Resources */,
+				8610382E2C7A41F000A9E503 /* noise.png in Resources */,
+				8681A6FE2C62A60E006BCAB6 /* ShaderTypes.h in Resources */,
+				860E692F2C6DFBF800ACC06D /* DebugTexture.png in Resources */,
+				8652E5F02C7A71A000DE0423 /* sky.png in Resources */,
+				860E692D2C6DFBCC00ACC06D /* DebugModel.mtl in Resources */,
+				8676772B2C7A52D700A8A2A6 /* DebugBGM.m4a in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8681A6ED2C62A60E006BCAB6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				86249C982C6FF33A00624DC7 /* BridgingTestPlayground.swift in Sources */,
+				86EF94072C6A2C9500D71A0C /* Scene.cpp in Sources */,
+				86C371F72C6CE900003D2F4D /* Mesh.swift in Sources */,
+				8681A6FD2C62A60E006BCAB6 /* Renderer.swift in Sources */,
+				868CEE762C638E08006FCAEC /* TransformMatrix.swift in Sources */,
+				8610382C2C79F46A00A9E503 /* Skybox.swift in Sources */,
+				8681A6FC2C62A60E006BCAB6 /* Shaders.metal in Sources */,
+				86276E932C6BEA930065ADB6 /* ModelImporter.swift in Sources */,
+				86390A112C77A00F00272308 /* Renderable.cpp in Sources */,
+				8681A7082C62A6B7006BCAB6 /* CPPTest.cpp in Sources */,
+				8681A6F72C62A60E006BCAB6 /* GameViewController.swift in Sources */,
+				860E69332C6E407900ACC06D /* GraphicResourceManager.swift in Sources */,
+				8681A6F52C62A60E006BCAB6 /* AppDelegate.swift in Sources */,
+				86390A132C77AE1C00272308 /* MetalBufferManager.swift in Sources */,
+				860E54A42C70E81000968AE8 /* PipelineStateInitializer.swift in Sources */,
+				860E69312C6E157E00ACC06D /* MeshMaterial.swift in Sources */,
+				868283F42C78FB6A004C9150 /* TextureImporter.swift in Sources */,
+				86276E952C6BEF640065ADB6 /* GameThread.swift in Sources */,
+				86249C922C6FA91E00624DC7 /* MeshTexture.swift in Sources */,
+				86EF79892C6B83AF00754B26 /* SwiftUtilities.cpp in Sources */,
+				86C371F92C6D35C1003D2F4D /* SwiftBridgingFunctions.cpp in Sources */,
+				86EF940A2C6A2EFF00D71A0C /* MatrixTransformCPP.cpp in Sources */,
+				867677292C7A4CEA00A8A2A6 /* AudioController.swift in Sources */,
+				8652B9982C70BEC1002B12CC /* VoxelShader.metal in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		8681A6F82C62A60E006BCAB6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8681A6F92C62A60E006BCAB6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8681A7002C62A60E006BCAB6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					_DEBUG,
+					JPH_DEBUG_RENDERER,
+					JPH_PROFILE_ENABLED,
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "";
+				LIBRARY_SEARCH_PATHS = "";
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OBJC_INTEROP_MODE = objcxx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8681A7012C62A60E006BCAB6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = "";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "";
+				LIBRARY_SEARCH_PATHS = "";
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OBJC_INTEROP_MODE = objcxx;
+			};
+			name = Release;
+		};
+		8681A7032C62A60E006BCAB6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Yami✨no✨Game macOS/Yami_no_Game_macOS.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3XJSZZ6J65;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/lib",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.elmundo.Yami-no-Game";
+				PRODUCT_NAME = "Yami✨no✨Game";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Yami✨no✨Game Shared/BridgingHeader.h";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		8681A7042C62A60E006BCAB6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Yami✨no✨Game macOS/Yami_no_Game_macOS.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3XJSZZ6J65;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/lib",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.elmundo.Yami-no-Game";
+				PRODUCT_NAME = "Yami✨no✨Game";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Yami✨no✨Game Shared/BridgingHeader.h";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8681A6E72C62A60C006BCAB6 /* Build configuration list for PBXProject "Yami✨no✨Game" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8681A7002C62A60E006BCAB6 /* Debug */,
+				8681A7012C62A60E006BCAB6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8681A7022C62A60E006BCAB6 /* Build configuration list for PBXNativeTarget "Yami✨no✨Game macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8681A7032C62A60E006BCAB6 /* Debug */,
+				8681A7042C62A60E006BCAB6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8681A6E42C62A60C006BCAB6 /* Project object */;
+}
